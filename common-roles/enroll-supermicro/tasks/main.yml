@@ -22,7 +22,7 @@
     headers:
       content-type: application/json
       Accept: application/json
-    body: "{\"Image\": \"{{ smb_host }}\\\\{{ smb_path}}\\\\{{ iso_name }}\"}"
+    body: '{"Image":"http://{{ smb_host }}/isos/{{ iso_name }}"}'
     body_format: json
     validate_certs: no
     force_basic_auth: yes
@@ -37,7 +37,7 @@
     headers:
       content-type: application/json
       Accept: application/json
-    body: '{"ResetType": "ForceOn"}'
+    body: '{"ResetType":"ForceOn"}'
     body_format: json
     force_basic_auth: yes
     validate_certs: no
@@ -67,7 +67,7 @@
     headers:
       content-type: application/json
       Accept: application/json
-    body: '{"ResetType": "ForceRestart"}'
+    body: '{"ResetType":"ForceRestart"}'
     body_format: json
     force_basic_auth: yes
     validate_certs: no

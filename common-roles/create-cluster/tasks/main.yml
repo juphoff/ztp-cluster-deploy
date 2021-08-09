@@ -34,7 +34,7 @@
       uri:
         url: "{{ ai_url }}/api/assisted-install/v1/clusters/{{ cluster_id.stdout }}"
         method: PATCH
-        body: "{\"machine_network_cidr\": \"10.16.231.0/24\"}"
+        body: "{\"machine_network_cidr\": \"10.1.190.0/24\"}"
         body_format: json
         status_code: 201
   environment:
